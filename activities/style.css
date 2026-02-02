@@ -2,3 +2,8 @@ p {
         color:blue;
         font-size: large;
 }
+
+header p {
+    color: rgb(223, 43, 226);
+    background-color: beige;
+}
