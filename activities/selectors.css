@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p {
+    color: rgb(230, 14, 208);
+    font-size: medium;
+}
+
+#second {
+    color: rgb(16, 150, 31);
+    font-size: medium;
+}
+
+#third {
+    color: blueviolet;
+}
+
+.larger {
+    font-size: large;
+}
+
+.separate {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.bolder {
+    font-weight: bold;
+}
