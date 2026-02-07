@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;  
+    font-size: 16px;                  
+    color: rgb(7, 47, 23);             
+    background-color: rgba(143, 185, 199, 0.89);        
+}
+
+.emphasize {
+    color: rgba(155, 11, 11, 0.796);                
+}
+
+.deemphasize {
+    color: rgb(140, 10, 162);                   
+}
+
+#main-title {
+    color: rgb(3, 52, 108);  
+}
+
+h1, h2 {
+    font-family: "Georgia", serif;
+}
