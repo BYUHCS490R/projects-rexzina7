@@ -7,7 +7,7 @@ body {
 }
 
 .decorative {
-    min-height: 150px;
+    min-height: 200px;
     background-image: url("flower.jpg");
     background-size: cover;
     background-repeat: no-repeat;
