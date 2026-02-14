@@ -18,6 +18,15 @@ nav a {
     font-weight: bold;
 }
 
+nav a.active {
+    color: rgb(155, 11, 11);  
+    text-decoration: underline; 
+}
+
+nav a:hover {
+    color: rgb(141, 20, 20); 
+}
+
 body.index main {
     background-image: url("globe.png");
     background-repeat: no-repeat;
