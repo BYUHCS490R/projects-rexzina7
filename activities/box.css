@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: beige;
+    background-color: rgb(34, 84, 54);
+    padding: 80px;
+}
+
+main {
+    background-color: rgb(185, 239, 221);
+}
+
+.mainpicture {
+    text-align: center;
+}
+
+.mainpicture img {
+    width: 300px;
+    margin: top;
+
+}
+
+footer {
+    background-color: rgb(226, 141, 203);
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed;
+}
