@@ -1,0 +1,32 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.wave {
+    float: left;
+    margin-right: 20px;
+    border: thin solid black;
+}
+
+.wave img {
+    width: 280px;
+}
+
+.first {
+    width: 250px;
+    float: right;
+}
+
+footer {
+    clear: both;
+    margin-top: 20px;
+}
