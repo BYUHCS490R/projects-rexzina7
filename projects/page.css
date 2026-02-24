@@ -14,7 +14,7 @@ body {
 header {
     padding: 40px;
     text-align: center;
-    background-image: url("stars.jpg");  /* whatever your file name is */
+    background-image: url("stars.jpg"); 
     color: white;
 }
 
