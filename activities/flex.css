@@ -1,0 +1,31 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+    padding: 5px;
+    background-color: rgb(50, 91, 42);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-flow: row wrap;
+}
+
+.card{
+    background-color: aquamarine;
+    margin: 5px;
+    border: thin solid black;
+    border-radius: 3px;
+    width: 100px;
+}
