@@ -6,7 +6,8 @@ body {
 
 header h1 {
     margin: 0;
-    background-color: rgb(185, 185, 111);
+    background-color: rgb(60, 123, 81);
+    color: azure;
     padding: 10px;
 }
 
@@ -34,6 +35,8 @@ main {
 .card {
     border: thin solid black;
     box-shadow: 5px 5px 5px black;
+    width: fit-content;
+    margin: auto;
 }
 
 .card h2 {
@@ -63,6 +66,21 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: rgb(241, 227, 120);
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .row{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media only print {
     body {
