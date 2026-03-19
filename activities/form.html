@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head> 
+<body>
+    <header>
+        <h1>Rexzina's Web Design Site</h1>
+    </header>
+    <main>
+        <form action="form.html" method="post">
+        <div>
+        Name: <input type="text" name="fullname">
+        <br>
+        Email: <input type="email" name="email">
+        <br>
+        Password: <input type="password" name="pass" placeholder="Password">
+        <br>
+        <input type="submit" value="Sign up">
+        <br>
+        </div>
+        <div>
+        <label for="state">State</label>
+        <select name="state" id="state">
+        <option value="CA">California</option>
+        <option value="HI">Hawaii</option>
+        <option value="UT">Utah</option> </select>
+        </div>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+        <br>
+        <label><input type="checkbox" name="remember"> Remember me</label>
+        <br>
+        Gender: 
+        <label><input type="radio" name="gender" value="male">Male </label>
+        <label><input type="radio" name="gender" value="female">Female </label>
+        <br> <input type="submit">
+    </form>
+    </main>
+    <h2>Questions:</h2>
+    <p>1. The action attribute tells where the form will be sent.</p>
+    <p>2. The method tells how the data will be sent either in post or get.</p>
+    <p>3. The get sends the form in url by making it visible and less secure whereas the post sends the data in the request body by making it not visible and more secure.</p>
+    <footer>
+        <p>&copy; 2026 Rexzina</p>
+    </footer>
+    </body>
+    </html> 
