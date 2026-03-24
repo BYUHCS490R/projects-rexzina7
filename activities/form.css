@@ -49,16 +49,12 @@ legend {
 
 input, select, textarea {
     flex: 1;
-    padding: 5px;
+    padding: 10px;
 }
 
 .inline {
     display: flex;
     gap: 10px;
-}
-
-input[type="submit"] {
-    padding: 8px;
 }
 
 input[type="submit"] {
