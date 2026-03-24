@@ -7,57 +7,60 @@
     <link rel="stylesheet" href="form.css">
 </head> 
 <body>
-    <header>
-        <h1>Rexzina's Web Design Site</h1>
-    </header>
-    <main>
-        <form action="form.html" method="post">
-            <fieldset>
-        <div class="form-row">
-            <label for="firstnameInput">First Name:</label>
-            <input type="text" name="firstname" id="firstnameInput" placeholder="firstname">
-            </div>
-        <br>
-        <div class="form-row">
-            <label for="emailInput">Email:</label>
-            <input type="email" name="email" id="emailInput" placeholder="email">
-            </div>
-        <div class="form-row">
-            <label for="passwordInput">Password:</label>
-            <input type="password" name="password" id="passwordInput" placeholder="password">
-            </div>
-            <div class="check-row">
-        <div class="spacer">Gender:</div>
-        <label><input type="radio" name="gender" value="male">Male </label>
-        <label><input type="radio" name="gender" value="female">Female </label>
-        </div>
-        <div class="check-row">
-            <div class="spacer"></div>
-            <label><input type="checkbox" name="remember"> Remember me</label>
+<header>
+    <h1>Rexzina's Web Design Site</h1>
+</header>
+<main>
+    <form action="form.html" method="post">
+    </form>
+        <fieldset>
+            <legend>Sign Up Information</legend>
+            <div class="form-row">
+                <label for="firstnameInput">First Name:</label>
+                <input type="text" name="firstname" id="firstnameInput" placeholder="firstname">
             </div>
             <div class="form-row">
-        <label for="state">State</label>
-        <select name="state" id="state">
-        <option value="CA">California</option>
-        <option value="HI">Hawaii</option>
-        <option value="UT">Utah</option> </select>
-        </div>
-        <div class="form-row">
-        <label for="comments">Comments</label>
-        <textarea name="comments" id="comments"></textarea>
-        </div>
-        <div class="form-row">
-            <div class="spacer"></div>
-        <input type="submit" value="Sign up">
+                <label for="emailInput">Email:</label>
+                <input type="email" name="email" id="emailInput" placeholder="email">
+            </div>
+            <div class="form-row">
+                <label for="passwordInput">Password:</label>
+                <input type="password" name="password" id="passwordInput" placeholder="password">
+            </div>
+            <div class="form-row">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="check-row">
+                <div class="spacer">Gender:</div>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign up">
+            </div>
         </fieldset>
-        </div>
     </form>
-    </main>
-    <h2>Questions:</h2>
-    <p>1. We can style forms by changing colors, fonts, borders to organize everything.</p>
-    <p>2. Flexbox helps to keep things neat on desktop or mobiles so it looks good on any screen.</p>
-    <footer>
-        <p>&copy; 2026 Rexzina</p>
-    </footer>
-    </body>
-    </html> 
+</main>
+<footer>
+    <p>&copy; 2026 Rexzina</p>
+</footer>
+</body>
+</html>
