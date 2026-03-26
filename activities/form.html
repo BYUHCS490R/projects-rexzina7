@@ -4,14 +4,13 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="form.css">
 </head> 
 <body>
 <header>
     <h1>Rexzina's Web Design Site</h1>
 </header>
 <main>
-    <form action="form.html" method="post">
+    <form action="processing.html" method="post" id="myForm">
         <fieldset>
             <legend>Sign Up Information</legend>
             <div class="form-row">
@@ -28,7 +27,8 @@
             </div>
             <div class="form-row">
                 <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
+                <input type="date" id="dob" name="dob"><br>
+                Age: <input type="number" name="age" id="age"><br>
             </div>
             <div class="check-row">
                 <div class="spacer">Gender:</div>
@@ -54,6 +54,10 @@
             <div class="form-row">
                 <div class="spacer"></div>
                 <input type="submit" value="Sign up">
+                <h2>Questions:</h2>
+                <p>1. JavaScript is a programming language used to make websites interactive. </p>
+                <p>2. We can run JavaScript in a browser or on a server</p>
+                <p></p>
             </div>
         </fieldset>
     </form>
@@ -61,5 +65,30 @@
 <footer>
     <p>&copy; 2026 Rexzina</p>
 </footer>
+<script>
+    document.getElementById("myForm").addEventListener("submit",function(event){
+        event.preventDefault();
+        const first = document.getElementById("firstname").value;
+        const last = document.getElementById("lastname").value;
+        const age = document.getElementById("age".value);
+
+        if (!first || !last){
+            alert("Please provide your full name.");
+            return;
+        }
+
+        if (!age || age < 18){
+            alert("You must 18 years or older to submit this form.");
+            return;
+        }
+
+        const data = {
+            firstname: first,
+            lastname: last,
+            age: age
+        }
+        console.log(data);
+    });
+</script>
 </body>
 </html>
