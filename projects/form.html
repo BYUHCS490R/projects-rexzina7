@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head> 
+<body>
+
+<header>
+    <h1>Rexzina's Web Design Site</h1>
+</header>
+
+<main>
+    <form id="myForm">
+        <fieldset>
+            <legend>Sign Up Information</legend>
+
+            <div>
+                <label for="firstnameInput">First Name:</label>
+                <input type="text" id="firstnameInput" placeholder="First Name">
+            </div>
+
+            <div>
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" placeholder="Email">
+            </div>
+
+            <div>
+                <label for="passwordInput">Password:</label>
+                <input type="password" id="passwordInput" placeholder="Password">
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob"><br>
+                Age: <input type="number" id="age">
+            </div>
+
+            <div>
+                Gender:
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <div>
+                <label><input type="checkbox" id="remember"> Remember me</label>
+            </div>
+
+            <div>
+                <label for="state">State:</label>
+                <select id="state">
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Sign up">
+            </div>
+        </fieldset>
+    </form>
+
+    <p id="responseMessage"></p>
+</main>
+
+<footer>
+    <p>&copy; 2026 Rexzina</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
