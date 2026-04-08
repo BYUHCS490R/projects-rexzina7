@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Travel Form</h1></header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="europe.html">Europe</a>
+  <a href="asia.html">Asia</a>
+  <a href="america.html">America</a>
+  <a href="africa.html">Africa</a>
+  <a href="oceania.html">Oceania</a>
+  <a href="form.html" class="active">Form</a>
+</nav>
+
+<main>
+  <h2>Tell us your Favorite Place</h2>
+
+  <form id="travelForm">
+    <input type="text" placeholder="Name" required><br><br>
+    <input type="number" placeholder="Age"><br><br>
+    <input type="text" placeholder="Favorite City"><br><br>
+    <textarea placeholder="Comment"></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="msg"></p>
+</main>
+
+<script>
+document.getElementById("travelForm").onsubmit = function(e){
+  e.preventDefault();
+  document.getElementById("msg").innerText = "Form submitted successfully!";
+  this.reset();
+}
+</script>
+
+<footer><p>© 2026 Rexzina</p></footer>
+
+</body>
+</html>
