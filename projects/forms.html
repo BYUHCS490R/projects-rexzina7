@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form</title>
+<title>Travel Form</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header><h1>Travel Form</h1></header>
+<header>
+  <h1>Travel Form</h1>
+</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -20,28 +24,52 @@
 </nav>
 
 <main>
-  <h2>Tell us your Favorite Place</h2>
-
+  <h2>Tell us your Favorite Destination</h2>
   <form id="travelForm">
-    <input type="text" placeholder="Name" required><br><br>
-    <input type="number" placeholder="Age"><br><br>
-    <input type="text" placeholder="Favorite City"><br><br>
-    <textarea placeholder="Comment"></textarea><br><br>
+    <input type="text" id="name" placeholder="Full Name" required><br><br>
+    <input type="number" id="age" placeholder="Age" required><br><br>
+    <input type="text" id="city" placeholder="Favorite City" required><br><br>
+    <textarea id="comment" placeholder="Your Comment" required></textarea><br><br>
     <button type="submit">Submit</button>
   </form>
-
   <p id="msg"></p>
+
 </main>
 
 <script>
-document.getElementById("travelForm").onsubmit = function(e){
+document.getElementById("travelForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  document.getElementById("msg").innerText = "Form submitted successfully!";
+
+  let formData = {
+    name: document.getElementById("name").value,
+    age: document.getElementById("age").value,
+    favoriteCity: document.getElementById("city").value,
+    comment: document.getElementById("comment").value
+  };
+
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("msg").innerHTML =
+      "Thank you " + formData.name + "! Your form was sent successfully.";
+  })
+  .catch(error => {
+    document.getElementById("msg").innerHTML = "Error submitting form.";
+  });
+
   this.reset();
-}
+});
 </script>
 
-<footer><p>© 2026 Rexzina</p></footer>
+<footer>
+  <p>&copy; 2026 Rexzina</p>
+</footer>
 
 </body>
 </html>
